@@ -138,4 +138,17 @@ Image("example")
     .edgesIgnoringSafeArea(.all) 
 ```
 
+## Day 81
+
+### Context Menus
+
+Just add a .contextMenu {} modifier to a View and provide Buttons with a Text and an Image.
+
+### Local Notifications
+
+import UserNotifications
+
+### Swift Package Manager
+
+
 

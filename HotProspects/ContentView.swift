@@ -7,6 +7,8 @@
 //
 
 import SwiftUI
+import SamplePackage
+
 
 struct ContentView: View {
     var body: some View {
