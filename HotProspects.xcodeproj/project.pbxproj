@@ -13,6 +13,10 @@
 		896BFEA923A105C9003DD4C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896BFEA823A105C9003DD4C1 /* Assets.xcassets */; };
 		896BFEAC23A105C9003DD4C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896BFEAB23A105C9003DD4C1 /* Preview Assets.xcassets */; };
 		896BFEAF23A105C9003DD4C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896BFEAD23A105C9003DD4C1 /* LaunchScreen.storyboard */; };
+		8997CFB923A77D2500A3ED1F /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997CFB823A77D2500A3ED1F /* MeView.swift */; };
+		8997CFBB23A77D2F00A3ED1F /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997CFBA23A77D2F00A3ED1F /* ProspectsView.swift */; };
+		8997CFBD23A7809100A3ED1F /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997CFBC23A7809100A3ED1F /* Prospect.swift */; };
+		8997CFC023A7893F00A3ED1F /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 8997CFBF23A7893F00A3ED1F /* CodeScanner */; };
 		89A1EF9C23A38CD50048C786 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 89A1EF9B23A38CD50048C786 /* SamplePackage */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,9 @@
 		896BFEAB23A105C9003DD4C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		896BFEAE23A105C9003DD4C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896BFEB023A105C9003DD4C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8997CFB823A77D2500A3ED1F /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		8997CFBA23A77D2F00A3ED1F /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		8997CFBC23A7809100A3ED1F /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8997CFC023A7893F00A3ED1F /* CodeScanner in Frameworks */,
 				89A1EF9C23A38CD50048C786 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,9 +66,10 @@
 		896BFEA123A105C3003DD4C1 /* HotProspects */ = {
 			isa = PBXGroup;
 			children = (
+				8997CFB723A77D1700A3ED1F /* Views */,
 				896BFEA223A105C3003DD4C1 /* AppDelegate.swift */,
+				8997CFBC23A7809100A3ED1F /* Prospect.swift */,
 				896BFEA423A105C3003DD4C1 /* SceneDelegate.swift */,
-				896BFEA623A105C3003DD4C1 /* ContentView.swift */,
 				896BFEA823A105C9003DD4C1 /* Assets.xcassets */,
 				896BFEAD23A105C9003DD4C1 /* LaunchScreen.storyboard */,
 				896BFEB023A105C9003DD4C1 /* Info.plist */,
@@ -75,6 +84,16 @@
 				896BFEAB23A105C9003DD4C1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8997CFB723A77D1700A3ED1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				896BFEA623A105C3003DD4C1 /* ContentView.swift */,
+				8997CFBA23A77D2F00A3ED1F /* ProspectsView.swift */,
+				8997CFB823A77D2500A3ED1F /* MeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +114,7 @@
 			name = HotProspects;
 			packageProductDependencies = (
 				89A1EF9B23A38CD50048C786 /* SamplePackage */,
+				8997CFBF23A7893F00A3ED1F /* CodeScanner */,
 			);
 			productName = HotProspects;
 			productReference = 896BFE9F23A105C3003DD4C1 /* HotProspects.app */;
@@ -126,6 +146,7 @@
 			mainGroup = 896BFE9623A105C2003DD4C1;
 			packageReferences = (
 				89A1EF9A23A38CD50048C786 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+				8997CFBE23A7893F00A3ED1F /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = 896BFEA023A105C3003DD4C1 /* Products */;
 			projectDirPath = "";
@@ -154,7 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8997CFB923A77D2500A3ED1F /* MeView.swift in Sources */,
+				8997CFBD23A7809100A3ED1F /* Prospect.swift in Sources */,
 				896BFEA323A105C3003DD4C1 /* AppDelegate.swift in Sources */,
+				8997CFBB23A77D2F00A3ED1F /* ProspectsView.swift in Sources */,
 				896BFEA523A105C3003DD4C1 /* SceneDelegate.swift in Sources */,
 				896BFEA723A105C3003DD4C1 /* ContentView.swift in Sources */,
 			);
@@ -352,6 +376,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8997CFBE23A7893F00A3ED1F /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
 		89A1EF9A23A38CD50048C786 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/twostraws/SamplePackage";
@@ -363,6 +395,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8997CFBF23A7893F00A3ED1F /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8997CFBE23A7893F00A3ED1F /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
 		89A1EF9B23A38CD50048C786 /* SamplePackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 89A1EF9A23A38CD50048C786 /* XCRemoteSwiftPackageReference "SamplePackage" */;
