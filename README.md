@@ -151,4 +151,17 @@ import UserNotifications
 ### Swift Package Manager
 
 
+## Day 82
+- Building our tab bar
+- Sharing data across tabs using @EnvironmentObject
+- Dynamically filtering a SwiftUI List
 
+
+## Day 83
+- Generating and scaling up a QR code
+- Scanning QR codes with SwiftUI
+- Adding options with a context menu
+
+## Day 84
+- Saving and loading data with UserDefaults
+- Posting notifications to the lock screen
